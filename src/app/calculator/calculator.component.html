@@ -1,0 +1,8 @@
+<div class="container mx-auto main">
+    <div class="row justify-content-center">
+        <input [(ngModel)]="val" class="form-control form-control-lg" type="text">
+        <div class="pop-btn">
+            <button *ngFor="let button of buttons" class="btn btn-info" (click)="calculate(button)">{{button}}</button>
+        </div>
+    </div>
+</div>
